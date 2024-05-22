@@ -12,7 +12,7 @@ function gerarQR() {
         
         //document.getElementById('qrCode').classList.remove('hidden');
         textoQR.classList.remove('error');
-        
+
         //offsetWidth , faz com que o navegador execute um reflow , q é o processo no qual o navegador recalcula a posição e o tamanho dos elementos na página.
         void textoQR.offsetHeight;
         textoQR.classList.add('error');
@@ -26,3 +26,25 @@ function gerarQR() {
 
     }
 }
+
+
+// alternar entre modo escuro e claro
+const mudarModoEscuro = () => {
+    const body = document.body;
+    //adiciona a classe dark-mode ao body
+    body.classList.toggle('dark-mode');
+};
+
+const modoEscuroBtn = document.getElementById('modo-escuro');
+modoEscuroBtn.addEventListener('click', mudarModoEscuro);
+
+/*
+function mudarModoEscuro(){
+
+    const body = document.body;
+
+    body.classList.toggle('dark-mode');
+
+
+}
+*/
