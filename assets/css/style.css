@@ -77,7 +77,15 @@ button:hover {
 
 /*erro no input*/
 #box input.error {
-    border-radius: 5px;
-    border: 1px solid red;
-    background-color: #ffe6e6;
+    
+    background-color: #fce4e4; /* Fundo levemente rosado */
+    animation: shake 0.3s; /* Animação de tremor */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
 }

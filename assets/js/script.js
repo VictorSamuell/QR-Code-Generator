@@ -11,6 +11,9 @@ function gerarQR() {
     if (textoQR.value.trim() === "") {
         
         //document.getElementById('qrCode').classList.remove('hidden');
+        textoQR.classList.remove('error');
+        //offsetWidth , faz com que o navegador execute um reflow , q é o processo no qual o navegador recalcula a posição e o tamanho dos elementos na página.
+        void textoQR.offsetHeight;
         textoQR.classList.add('error');
         qrCode.classList.add('hidden');  
 
