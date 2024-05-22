@@ -20,7 +20,7 @@ body {
     margin: 0 1rem;
 }
 
-#container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +58,7 @@ body {
 
 }
 
-#gerar{
+button{
 
     margin-top: 10px;
     border: none;
@@ -76,15 +76,9 @@ body {
 
 }
 
-#gerar:hover{
+button:hover{
 
     background-color: #a11919;
 
 }
 
-#img{
-
-    display: none;
-
-
-}

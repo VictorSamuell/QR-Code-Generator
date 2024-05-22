@@ -11,20 +11,20 @@
 </head>
 <body>
     
-    <main id="container">
+    <div class="container">
 
         <div id="box">
         
         <h2>Texto ou Link</h2>
-        <input type="text" placeholder="Link ou Texto">
-        <button id="gerar">Gerar QR CODE</button>
+        <input type="text" placeholder="Link ou Texto" id="textoQR">
+        <div id="imgBox">
+
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" id="qrCode">
+
+
+        </div>
+        <button onclick="gerarQR()">Gerar QR CODE</button>
         
-            <div id="img">
-
-                <img src="" id="qrCode">
-
-
-            </div>
 
         </div>
 
@@ -34,7 +34,7 @@
 
 
 
-    </main>
+    </div>
 
     <script src="assets/js/script.js"></script>
 
