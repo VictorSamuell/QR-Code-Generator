@@ -10,34 +10,16 @@
 
 </head>
 <body>
-    
     <div class="container">
-
         <div id="box">
-        
-        <h2>Texto ou Link</h2>
-        <input type="text" placeholder="Link ou Texto" id="textoQR">
-        <div id="imgBox">
-
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" id="qrCode" class="hidden">
-
-
+            <h2>Texto ou Link</h2>
+            <input type="text" placeholder="Link ou Texto" id="textoQR">
+            <div id="imgBox">
+                <img src="" id="qrCode" class="hidden">
+            </div>
+            <button onclick="gerarQR()">Gerar QR CODE</button>
         </div>
-        
-        <button onclick="gerarQR()">Gerar QR CODE</button>
-        
-
-        </div>
-
-
-
-
-
-
-
     </div>
-
     <script src="assets/js/script.js"></script>
-
 </body>
 </html>

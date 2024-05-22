@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
-*{
-
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Radio Canada Big", sans-serif;
-
-
-
 }
 
 body {
@@ -25,12 +21,9 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-
-    
 }
 
-#box{
-
+#box {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -41,25 +34,18 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-
-
 }
 
-#box input{
-
-
+#box input {
     background-color: #e4e4e6;
     border: none;
     width: 100%;
     font-size: 1.25rem;
     color: #333;
     padding: 0.5rem;
-
-
 }
 
-button{
-
+button {
     margin-top: 10px;
     border: none;
     font-weight: bold;
@@ -72,29 +58,26 @@ button{
     max-width: 250px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
-
 }
 
-button:hover{
-
+button:hover {
     background-color: #a11919;
-
 }
 
-
-#imgBox{
-
+#imgBox {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
-.hidden{
-
+/*não aparece a imagem*/
+.hidden {
     display: none;
+}
 
-
+/*erro no input*/
+#box input.error {
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: #ffe6e6;
 }
