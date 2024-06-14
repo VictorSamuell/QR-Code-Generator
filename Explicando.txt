@@ -1,1 +1,1 @@
-S
+Site hospedado no vercel , que transforma qualquer coisa escrita , seja um link ou palavra em QR Code.
